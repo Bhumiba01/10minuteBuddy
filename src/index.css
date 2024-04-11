@@ -70,7 +70,74 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.bg-primary {
+  background-color: rgba(199, 210, 254, 1);
+}
+
+.bg-secondary {
+  background-color: rgba(199, 210, 254, 0.5);
+}
+
+.border-primary {
+  border-color: rgba(199, 210, 254, 1);
+}
+
+.bg-background {
+  background-color: rgba(199, 210, 254, 1);
+}
+
+span .relative{
+  height: 0.25rem;
+}
+
+span .block{
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+.relative:hover .bg-primary {
+  background-color: rgba(224, 231, 255, 1);
+  transition: background-color 300ms ease-in-out;
+}
+
+.relative:hover .bg-secondary {
+  background-color: rgba(224, 231, 255, 0.5);
+  transition: background-color 300ms ease-in-out;
+}
+
+.relative:hover .border-primary {
+  border-color: rgba(224, 231, 255, 1);
+  transition: background-color 300ms ease-in-out;
+}
+
+.relative:hover .bg-background {
+  background-color: rgba(224, 231, 255, 1);
+  transition: background-color 300ms ease-in-out;
+}
+
+.relative:hover span .block{
+  height: 0.6rem;
+  width: 0.6rem;
+  transition: height 300ms ease-in-out, width 300ms ease-in-out;
+}
+
+.grid .sound{
+  aspect-ratio: 1/1;
+}
+
+div .sound:hover{
+  background-color: rgba(224, 231, 255, 0.1);
+  border-radius: 8px;
+}
+
+div .active{
+  background-color: rgba(224, 231, 255, 0.1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
