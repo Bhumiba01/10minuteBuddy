@@ -54,8 +54,6 @@ const Card: React.FC<CardProps> = ({
                 <Slider
                     className='slider-secondary absolute bottom-0'
                     value={[volume]}
-                    max={100}
-                    step={1}
                     onChange={handleVolumeChange}
                 />
             )}
