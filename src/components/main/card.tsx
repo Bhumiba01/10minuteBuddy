@@ -46,7 +46,7 @@ const Card: React.FC<CardProps> = ({
     }, [isActive, masterVolume]);
 
     return (
-        <div className={`sound w-full relative flex justify-center items-center ${isActive ? 'active' : ''}`}>
+        <div className={`aspect-square w-full relative cursor-pointer flex justify-center items-center hover:bg-card-cardhover rounded-md ${isActive ? 'bg-card-cardhover text-skin-base' : ''}`}>
             <div className="icon" onClick={handleToggleActive}>
                 {Icon}
             </div>
